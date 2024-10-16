@@ -1,0 +1,20 @@
+name: Publish Image to Docker
+
+on:
+  [workflow_dispatch]
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build ./docker/8.3/ -t lyoppb/myimage:2.0
+    - name: login into docker 
+      run:
+        docker login -u lyoppb -p ${{ secrets.DOCKER_HUB_TOKEN }}
+    - name: push the docker image
+      run:
+        docker push lyoppb/myimage:2.0 
