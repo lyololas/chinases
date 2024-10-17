@@ -23,12 +23,12 @@ const cart = computed(() => usePage().props.cart);
             </Link>
 
             <!-- Search Form -->
-            <h1 class="text-2xl text-white">hi</h1>
 
             <!-- Login/Logout Controls -->
+        <Link :href="route('dashboard')">
             <div v-if="canLogin" class="flex items-center md:order-2">
                 <div class="mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 16 16" class="text-white">
                         <g fill="currentColor">
                             <path d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0M7.5 4A2.5 2.5 0 0 0 5 6.5h2a.5.5 0 0 1 .5-.5h.646a.382.382 0 0 1 .17.724L7 7.382V9h2v-.382l.211-.106A2.382 2.382 0 0 0 8.146 4z" />
                             <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6a6 6 0 1 0 0 12A6 6 0 0 0 8 2" />
@@ -36,7 +36,7 @@ const cart = computed(() => usePage().props.cart);
                     </svg>
                 </div>
             </div>
-                
+        </Link>
         </div>
     </nav>
 </template>
