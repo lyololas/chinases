@@ -33,6 +33,7 @@ Chinases - веб-приложение для китайской сети рес
 * Tailwind CSS
 
 * # ❗Как запустить ❓
+0) все файлы находятся в бренче 'master'
 1) Убедитесь, что у вас правильно настроена среда. Вам понадобятся MySQL, PHP8.1, [Node.js](https://nodejs.org/en/download/package-manager) и [Composer](https://getcomposer.org/download/)
 MYsql и PHP обычно идут вместе в [XAMPP](https://www.apachefriends.org/ru/download.html)
 2) Загрузите проект (или клонируйте с помощью GIT)
